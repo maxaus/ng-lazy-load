@@ -3,6 +3,7 @@ div.header
 
 div.jumbotron
     h2 GitHub user events
+    h4 Try infinite scroll
     ul(lazy-load, lazy-data="newsList", lazy-data-provider="NewsFeedService", lazy-load-method="getNewsList", lazy-range="10").news-list
         //- we should use class="soon" or class=="in-progress" or class="completed" in the line below
         li(ng-repeat="event in newsList track by $index")

@@ -17,7 +17,17 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     // list of files / patterns to load in the browser
-    files: [],
+    files: [{pattern: '../app/bower_components/jquery/dist/jquery.js' },
+        {pattern: '../app/bower_components/angular/angular.js' },
+        {pattern: '../app/bower_components/angular-mocks/angular-mocks.js' },
+        {pattern: '../app/bower_components/angular-resource/angular-resource.js' },
+        {pattern: '../app/bower_components/json3/lib/json3.min.js'},
+        {pattern: '../app/bower_components/jquery-mousewheel/jquery.mousewheel.js' },
+        {pattern: '../app/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js' },
+        {pattern: '../app/bower_components/bootstrap/dist/js/bootstrap.js' },
+        {pattern: '../app/scripts/*.js'},
+        {pattern: '../app/scripts/**/*.js'},
+        {pattern: 'spec/{,*/}*.js'}],
 
     // list of files / patterns to exclude
     exclude: [],

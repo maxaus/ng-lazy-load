@@ -1,4 +1,4 @@
 ng-lazy-load
 ============
 
-Lazy loading list with AngularJS directive
+Lazy loading list with infinite scroll using AngularJS directive.
